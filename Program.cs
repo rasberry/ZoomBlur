@@ -40,7 +40,7 @@ namespace ZoomBlur
 
 		static void RenderZoom(Bitmap inpmap)
 		{
-			//TODO make parallel [see D:\Projects\Fractals\AreaSmoother\Program.cs]
+			//TODO make parallel [see https://github.com/rasberry/AreaSmoother/blob/master/Program.cs]
 			//TODO do timing test vs imagemagick
 			double cx = inpmap.Width / 2.0;
 			double cy = inpmap.Height / 2.0;
@@ -222,7 +222,7 @@ namespace ZoomBlur
 					}
 					string sval = args[++a];
 					if (!double.TryParse(sval, out ZoomAmount)) {
-						Console.WriteLine("Error: could no parse "+sval+" as a number");
+						Console.WriteLine("Error: could not parse "+sval+" as a number");
 						return false;
 					}
 				}
